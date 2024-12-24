@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style..css">
+    <link rel="stylesheet" href="csss/style..css">
     <link 
         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         rel="stylesheet"
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Protfolio.</a>
+        <a href="home.html" class="logo">ZifengWEB.</a>
 
         <nav class="navbar">
             <a href="home.html" class="item" style="--i: 1">Home</a>
@@ -32,5 +32,17 @@
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="script.js"></script>    
+
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/oversea/index.js"></script>
+    <script>
+        new CozeWebSDK.WebChatClient({
+          config: {
+            bot_id: '7452031199465291781',
+          },
+          componentProps: {
+            title: 'Coze',
+          },
+        });
+    </script>
 </body>
 </html>

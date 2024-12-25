@@ -259,14 +259,14 @@ body {
 }
 
 /* Media query to remove h3 and h1 in home-content */
-@media (max-width: 950px) {
+@media screen and (max-width: 950px) {
     .home-img {
         display: none;
     }
 }
 
 /* Media query to remove p in home-content */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
     .home-content h1 {
         display: none;
     }

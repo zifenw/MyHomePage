@@ -231,7 +231,7 @@ main p{
     }
 }
 
-@media(max-width: 800px){
+@media screen and (max-width: 800px){
     body{
         grid-template-columns: 1fr;
     }
@@ -319,7 +319,7 @@ main p{
     background-color: var(--text-clr);
   }
 
-  @media (max-width: 795px) {
+  @media screen and (max-width: 795px) {
     .home-content h1 {
         display: none;
     }

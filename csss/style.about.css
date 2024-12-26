@@ -145,7 +145,7 @@ body{
 
 
 
-/* main{
+main{
     padding: min(30px, 7%);
 }
 
@@ -162,7 +162,7 @@ main p{
     padding: min(3em, 15%);
 
     h2, p { margin-top: 1em}
-} */
+} 
 
 /* Header styling */
 .header {

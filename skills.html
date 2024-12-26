@@ -26,35 +26,46 @@
     <section class="container">
         <div class="content" id="skills">
             <div class="section-header">
-                <h2>Personal Skills</h2>
-                <p></p>
+                 <svg width="500" height="250" class="text"> 
+                    <defs>
+                        <linearGradient id="geekColor" gradientTransform = "rotate(90)">
+                            <stop offset="0%" stop-color="#5e63ff"></stop>
+                            <stop offset="100%" stop-color="#91bd3a"></stop>
+                        </linearGradient>
+                    </defs>
+                    <text class="skill_text" x="100" y="100">
+                        Personal Skills
+                    </text>
+                </svg>
+
+                <!-- <h2>Personal Skills</h2> -->
             </div>
 
         </div>
 
         <div class="wrapper custom">
             <div class="skillset">
-                <h3 class="title-area">Frontend</h3>
+                <h3 class="title-area"style="--i: 1">Frontend</h3>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 2">
                     <span class="topic">HTML</span>
                     <span class="percent">95%</span>
                     <span class="bar bar-1"></span>
                 </div>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 3">
                     <span class="topic">CSS</span>
                     <span class="percent">85%</span>
                     <span class="bar bar-2"></span>
                 </div>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 4">
                     <span class="topic">Javascript</span>
                     <span class="percent">65%</span>
                     <span class="bar bar-3"></span>
                 </div>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 5">
                     <span class="topic">Bootstrap</span>
                     <span class="percent">65%</span>
                     <span class="bar bar-4"></span>
@@ -62,27 +73,27 @@
             </div>
 
             <div class="skillset">
-                <h3 class="title-area">Backend</h3>
+                <h3 class="title-area"style="--i: 1">Backend</h3>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 2">
                     <span class="topic">Java</span>
                     <span class="percent">85%</span>
                     <span class="bar bar-5"></span>
                 </div>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 3">
                     <span class="topic">C/C++</span>
                     <span class="percent">75%</span>
                     <span class="bar bar-6"></span>
                 </div>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 4">
                     <span class="topic">Python</span>
                     <span class="percent">65%</span>
                     <span class="bar bar-7"></span>
                 </div>
 
-                <div class="line-area">
+                <div class="line-area"style="--i: 5">
                     <span class="topic">PHP</span>
                     <span class="percent">80%</span>
                     <span class="bar bar-8"></span>
@@ -98,7 +109,7 @@
               <span class="current-score">0</span>
             </div>
       
-            <div class="start-text">Press Any Key To Start</div>
+            <div class="start-text">Press Any Key to start</div>
       
             <img src="./images/dino-stationary.png" alt="Dinoasur" class="dino" />
             <img
@@ -115,6 +126,16 @@
             />
           </div>
     </section>
- 
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/oversea/index.js"></script>
+    <script>
+        new CozeWebSDK.WebChatClient({
+          config: {
+            bot_id: '7452031199465291781',
+          },
+          componentProps: {
+            title: 'Coze',
+          },
+        });
+    </script>
 </body>
 </html>

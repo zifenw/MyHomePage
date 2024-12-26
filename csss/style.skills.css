@@ -1,0 +1,253 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif, montserrat;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: #1f242d;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    opacity: 0;
+    transition: 0.3s;
+    animation: slideUp 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #6f63d4;
+}
+
+.container{
+    padding-top: 5%;
+}
+
+.custom{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.wrapper{
+    row-gap: 2rem;
+}
+
+.section-header{
+ text-align: center;
+ margin-bottom: 60px;   
+}
+
+.section-header h2{
+    font-size: 40px;
+    color: #fff;
+    margin: 25px 0 0;
+}
+.section-header p{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+}
+.title-area{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.line-area{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.topic{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.percent{
+    color:#fff;
+    font-weight: 700;
+}
+.bar{
+    position: absolute;
+    bottom: -0.75rem;
+    height: 0.75rem;
+    background: linear-gradient(45deg, #5243d6, #9993cf);
+    border-radius: 50px;
+    box-shadow: 0 2px aliceblue;
+}
+.bar-1{width: 95%;}
+.bar-2{width: 85%;}
+.bar-3{width: 65%;}
+.bar-4{width: 65%;}
+.bar-5{width: 85%;}
+.bar-6{width: 70%;}
+.bar-7{width: 65%;}
+.bar-8{width: 80%;}
+
+@media screen and (min-width: 786px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        margin: 0;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .custom{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*animation*/
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+/* Media query to remove p in home-content */
+@media screen and (max-width: 795px) {
+    .logo {
+        display: none; 
+    }
+    .navbar {
+        margin-left: -55px;
+        display: flex; 
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: #1f242d;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #42434a;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e6e6ef;;
+}

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/index.js" type="module" defer></script>
     <link rel="stylesheet" href="csss/style.skills.css">
+    <script src="./scripts/game.js" type="module"></script>
     <title>Skills</title>
 </head>
 <body>
@@ -91,13 +91,28 @@
         </div>
     </section>
 
-    <section class="game">
-        <div class="world">
-            <div class="score">0</div>
-            <div class="start-screen">Press any key to start</div>
-            <img src="./images/ground.png" alt="ground" class="ground" />
-            <img src="./images/ground.png" alt="ground" class="ground" />
-            <img src="./images/dino-stationary.png" alt="dino" class="dino" />
+    <section class="smallgame">
+        <div class="game">
+            <div class="scores">
+              High Score: <span class="high-score"></span> Score:
+              <span class="current-score">0</span>
+            </div>
+      
+            <div class="start-text">Press Any Key To Start</div>
+      
+            <img src="./images/dino-stationary.png" alt="Dinoasur" class="dino" />
+            <img
+              src="./images/ground.png"
+              alt="Ground"
+              class="ground"
+              data-ground-1
+            />
+            <img
+              src="./images/ground.png"
+              alt="Ground"
+              class="ground"
+              data-ground-2
+            />
           </div>
     </section>
  

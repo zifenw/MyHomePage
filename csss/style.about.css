@@ -145,7 +145,7 @@ body{
 
 
 
-main{
+/* main{
     padding: min(30px, 7%);
 }
 
@@ -162,7 +162,7 @@ main p{
     padding: min(3em, 15%);
 
     h2, p { margin-top: 1em}
-}
+} */
 
 /* Header styling */
 .header {
@@ -171,7 +171,7 @@ main p{
     top: 0;
     left: 0;
     width: 100%; /* Ensures it spans the entire width */
-    background: var(--base-clr);
+    background: #1f242d;
     z-index: 100; /* Ensures it stays above other elements */
     padding: 20px 10%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
